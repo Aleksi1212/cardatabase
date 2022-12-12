@@ -3,7 +3,7 @@
 const { statuscodes, statusmessages} = require('./statusCodes')
 
 const Database = require('./database')
-const options = require('./connection.json')
+const options = require('./connection')
 
 const sqlQuerys = require('./sqlQuerys')
 const getAllFromDatabase = sqlQuerys.searchAll

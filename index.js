@@ -1,7 +1,7 @@
 'use strict';
 
 const path = require('path')
-console.log(process.env.MARIA_DB_USER);
+
 const expresss = require('express')
 const app = expresss()
 
@@ -24,7 +24,7 @@ app
         res.render('menu', commands.menu)
     })
 
-    // haetaan kaikki autot ja luodaan taulu sivulle saaduilla tiedoilla
+    // search all cars from database and create a table with gotten information
     .get('/searchAll', (req, res) => storage.searchAll()
         .then(resultTable => res.render('table', {
             lang: 'fi',
@@ -39,12 +39,12 @@ app
         }))
         .catch(error => sendStateMessage(res, error)))
     
-    // luodaan form sivulle, jolla haetaan yksi auto
+    // create a form on the page
     .get('/search', (req, res) => {
         res.render('form', commands.searchOne)
     })
 
-    // haetaan yksi auto ja näytetään tulokset sivulla
+    // search one car and show information on the page
     .post('/searchOne', async (req, res) => {
         try {
             const productionNumber = req.body.productionNumber
