@@ -1,7 +1,7 @@
 'use strict';
 
 const path = require('path')
-
+console.log(process.env.MARIA_DB_USER);
 const expresss = require('express')
 const app = expresss()
 
@@ -37,7 +37,7 @@ app
             send: 'Send data',
             menuscreen: 'Menu'
         }))
-        .catch(error => sendStateMessage(res, err)))
+        .catch(error => sendStateMessage(res, error)))
     
     // luodaan form sivulle, jolla haetaan yksi auto
     .get('/search', (req, res) => {
