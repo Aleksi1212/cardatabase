@@ -1,0 +1,24 @@
+<%- include('start', { lang, title, subject }) %>
+    <div class="tablediv">
+        <table class="allCars">  
+            <thead>
+                <tr>
+                    <% fields.forEach(field => { %>
+                        <th><%= field.name %></th>
+                    <% }) %>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <% fields.forEach(field =>{ %>
+                        <% if(field.name === 'HighSpeed') { %>
+                            <td><%= field.data %> km/h</td>
+                        <% } else { %>
+                            <td><%= field.data %></td>
+                        <% } %>
+                    <% }) %>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+<%- include('end', { menuscreen }) %>

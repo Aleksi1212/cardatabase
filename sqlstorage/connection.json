@@ -1,0 +1,7 @@
+{
+    "host": "localhost",
+    "user": "root",
+    "password": "passedc12",
+    "port": 3306,
+    "database": "cardatabase"
+}

@@ -1,0 +1,55 @@
+.formdiv {
+    display: flex;
+    justify-content: center;
+}
+
+.insertdata {
+    border-collapse: collapse;
+    border-bottom: 2px solid #009879;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 500px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+}
+
+.forminfo {
+    background-color: #009879;
+    height: 30px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.inputfield {
+    position: relative;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.inputfield input {
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.insertdata button {
+    margin-left: 200px;
+    margin-bottom: 20px;
+    background-color: #009879;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    width: 100px;
+    height: 35px;
+    cursor: pointer;
+    font-family: Quicksand;
+    font-size: 13px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5)
+}

@@ -1,0 +1,38 @@
+
+
+.tablediv {
+    display: flex;
+    justify-content: center;
+}
+
+.allCars {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 750px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+}
+
+.allCars thead tr {
+    background-color: #009879;
+    color: white;
+    text-align: left;
+}
+
+.allCars th, .allCars td {
+    padding: 12px 15px;
+}
+
+.allCars tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.allCars tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.allCars tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}

@@ -1,0 +1,46 @@
+.wrapper {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#link {
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    border-radius: 30px;
+    margin-bottom: 5%;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+}
+
+#link span {
+    position: relative;
+    z-index: 2;
+}
+
+#link:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 30px;
+    background: #009879;
+    transition: all .35s;
+}
+
+#link:hover {
+    color: white;
+}
+
+#link:hover:after {
+    width: 100%;
+}

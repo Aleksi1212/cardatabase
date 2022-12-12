@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Quicksand;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.header h1 {
+    border-bottom: 3px solid #009879;
+}
+
+.subheader {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.goBack {
+    border-radius: 30px;
+    background-color: #009879;
+    height: 40px;
+    width: 100px;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    margin-top: 1.5%;
+    margin-left: 2.5%;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+    filter: brightness(85%);
+}
+
+.info, .error {
+    margin-top: 10%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.info p {
+    border-bottom: 2px solid #009879;
+}
+
+.error p {
+    border-bottom: 2px solid #FF3131;
+}

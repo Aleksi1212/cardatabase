@@ -1,0 +1,16 @@
+<%- include('start', { lang, title, subject }) %>
+    <div class="formdiv">
+        <div class="insertdata">
+            <div class="forminfo"><%= forminfo %></div>
+            <form action="<%= func %>" method="POST">
+                <% fields.forEach(field => { %>
+                    <div class="inputfield">
+                        <input type="text" id="<%= field.id %>" name="<%= field.name %>"
+                        value="<%= field.value %>" placeholder="<%= field.label %>" <%= field.readonly %>>
+                    </div>
+                <% }) %>
+                <button type="submit"><%= send %></button>
+            </form>
+        </div>
+    </div>
+<%- include('end', { menuscreen }) %>

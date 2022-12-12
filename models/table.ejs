@@ -1,0 +1,27 @@
+<%- include('start', { lang, title, subject }) %>
+<div class="tablediv">
+    <table class="allCars">
+        <thead>
+            <tr>
+                <% columnTitles.forEach(columnTitle => { %>
+                    <th><%= columnTitle %></th>
+                <% }) %>
+            </tr>
+        </thead>
+        <tbody>
+            <% resultTable.forEach(result => { %>
+                <tr>
+                    <% Object.values(result).forEach(val => { %>
+                        <% if (val === result.highSpeed) { %>
+                            <td><%= val %> km/h</td>
+                        <% } else { %>
+                            <td><%= val %></td>
+                        <% } %>
+                    <% }) %>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+</div>
+
+<%- include('end', { menuscreen }) %>

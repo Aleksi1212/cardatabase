@@ -1,0 +1,9 @@
+<%- include('start', { lang, title, subject }) %>
+    <div class="wrapper">
+        <% options.forEach(option => { %>
+            <a href="<%= option.path %>" id="link">
+                <span><%= option.text %></span>
+            </a>
+        <% }) %>
+    </div>
+<%- include('end', { menuscreen: null }) %>
