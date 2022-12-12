@@ -13,7 +13,7 @@ const statuscodes = {
     UPDATE_ERROR: 8
 }
 
-// statusviestit
+// statusmessages
 const statusmessages = {
     PROGRAM_ERROR: () => ({
         message: 'Error in program',
