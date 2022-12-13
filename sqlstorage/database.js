@@ -12,10 +12,10 @@ module.exports = class Database {
             let connection
             try {
                 
-                connection = await mariadb.createConnection(this.con) // yhdistetään tietokantaan annetulla konstruktori attribuutilla
-                let queryResult = await connection.query(sql, params) // kysellään tietokantaa annetuilla arvoilla
+                connection = await mariadb.createConnection(this.con) // connect to database with given constructor attribute
+                let queryResult = await connection.query(sql, params) // query database with given information
 
-                // tarkistetaan onnistuiko kysely
+                // check if query was successful
                 if (typeof queryResult === 'undefined') {
                     rej('Query error')
                 }

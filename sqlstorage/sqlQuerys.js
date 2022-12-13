@@ -1,6 +1,6 @@
 'use strict';
 
-const commands = {
+const querys = {
     searchAll: "SELECT * FROM cars",
     search: "SELECT * FROM cars WHERE productionNumber=?",
     add: "INSERT INTO cars VALUES(?, ?, ?, ?, ?)",
@@ -9,4 +9,4 @@ const commands = {
     primaryKey: "productionNumber"
 }
 
-module.exports = commands
+module.exports = querys

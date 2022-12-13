@@ -1,6 +1,6 @@
 'use strict';
 
-// statuskoodit
+// statuscodes
 const statuscodes = {
     PROGRAM_ERROR: 0,
     NOT_FOUND: 1,

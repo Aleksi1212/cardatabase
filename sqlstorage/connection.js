@@ -1,11 +1,3 @@
-// {
-//     "host": "localhost",
-//     "user": "root",
-//     "password": "passedc12",
-//     "port": 3307,
-//     "database": "cardatabase"
-// }
-
 require('dotenv').config()
 
 const connection = {

@@ -1,6 +1,6 @@
 'use strict';
 
-const toiminnot = {
+const commands = {
     menu: {
         lang: "en",
         title: "Menu",
@@ -154,4 +154,4 @@ const toiminnot = {
     }
 }
 
-module.exports = toiminnot
+module.exports = commands

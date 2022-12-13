@@ -73,12 +73,12 @@ app
         }
     })
 
-    // luodaan lomeka sivulle, jolla voi lisätä uuden auton
+    // create a form on the page that can add a new car to database
     .get('/add', (req, res) => {
         res.render('form', commands.add)
     })
 
-    // talletetaan tiedot tietokantaan ja näytetään tulossivu
+    // save information to database and show status
     .post('/addData', async (req, res) => {
         try {
             const newCar = req.body
@@ -91,7 +91,7 @@ app
         }
     })
 
-    // luodaan form sivulle, jolla voidaan muuttaa auton tietoja
+    // create a form on the page that can update cars information
     .get('/update', (req, res) => {
         res.render('form', commands.update)
     })
@@ -157,17 +157,17 @@ app
         }
     })
 
-    // tallennetaan muutetut tiedot tietokantaan ja näytetään tulossivu
+    // save changed information to database and show state
     .post('/saveData', (req, res) => storage.update(req.body)
         .then(status => sendStateMessage(res, status))
         .catch(error => sendStateMessage(res, error)))
 
-    // luodaan form sivulle, jolla voi poistaa auton
+    // create a form on the page that can remove car from database
     .get('/remove', (req, res) => {
         res.render('form', commands.remove)
     })
 
-    // poistetaan auto tietokannasta ja näytetään tilasivu
+    // remove car from database and show state
     .post('/removeCar', (req, res) => storage.remove(req.body.productionNumber)
         .then(status => sendStateMessage(res, status))
         .catch(error => sendStateMessage(res, error)))
