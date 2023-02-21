@@ -2,7 +2,7 @@
 
 School project
 
-Simple web application, where a user can give information about cars and save them to a database.
+Simple web application, where a user can search cars from a database, add new cars, update existing cars and remove existing cars from a database
 
 Application Menu:
 ![menuImage](/exampleImages/cardatabasemenu.png)
