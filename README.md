@@ -1,7 +1,5 @@
 # cardatabase
 
-School project
-
 Simple web application, where a user can search cars from a database, add new cars, update existing cars and remove existing cars from a database
 
 Application Menu:
